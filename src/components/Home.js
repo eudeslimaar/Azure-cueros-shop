@@ -8,7 +8,7 @@ return(
     <div className="home__container">
    <div className="home__card">
         <h1>
-             Bem vindo!
+             ¡Bienvenido!
         </h1>
         <p>
             Mejor sitio de billeteras

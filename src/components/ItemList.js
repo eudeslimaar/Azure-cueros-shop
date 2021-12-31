@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Item from "./Item"
 import "./ItemList.css"
-import productos from "../data/productos"
+import productos from "../data/productos.js"
+import { Link } from "react-router-dom";
 
-const ItemList = () => {
+
+const ItemList = ({ soloCategoria }) => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  
 
-  const loadItems = async () => {
-    const response = await new Promise((resolve) => {
-      setTimeout(function () {
+  const loadItems = async () => {     
+    const response = await new Promise((resolve, reject) => {
+      setTimeout(() =>{
         resolve(productos);
       }, 2000);
     });
@@ -27,11 +30,31 @@ const ItemList = () => {
     getItems();
   }, []);
 
+
+
+  
   return (
     <div className="itemlist__container">
-      {items.map((item) => {
-        return <Item key={item.id} item={item} />;
-      })}
+      {soloCategoria
+        ? items.map((item) => {
+            return (
+              item.categoria === soloCategoria && (
+                <Link key={item.id} to={`/item/${item.id}`}>
+                  <Item item={item} />
+                </Link>
+              )
+            );
+          })
+        : items.map((item) => {
+            return (
+              <Link key={item.id} to={`/item/${item.id}`}>
+                <Item item={item} />
+              </Link>
+            );
+          })}
+      {isLoading && (
+        <h2>CARGANDO...</h2>
+      )}
     </div>
   );
 };

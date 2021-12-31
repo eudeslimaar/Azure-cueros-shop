@@ -4,3 +4,10 @@
     flex-direction: column;
     padding: 80px 8% 0;
 }
+
+img.categoria__img{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}

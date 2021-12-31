@@ -4,20 +4,20 @@ import wallet03 from "../media/image03.jpg";
 import wallet04 from "../media/image04.jpg"
 import wallet05 from "../media/image05.jpg";
 
-export default[
+export default [
     {
-        id: '1',
+        id: 1,
         nombre: 'Billetera Azul',
-        category: 'Azul',
+        categoria: 'azul',
         precio:  230,
         image: wallet01,
         stock: '10',
         descp: 'Una billetera con muchas partes, para guardar todo que pueda, hecha com cuero de qualidade.'     
     },
     {
-        id: '2',
+        id: 2,
         nombre: 'Billetera Verde',
-        category: 'Verde',
+        categoria: 'otros',
         precio:  260,
         image: wallet02,
         stock: '10',
@@ -25,8 +25,8 @@ export default[
 
     },
     {
-        id: '3',
-        category: 'Amarilla',
+        id: 3,
+        categoria: 'amarillo',
         nombre: 'Billetera Amarillo',
         precio:  220,
         image: wallet03,
@@ -35,8 +35,8 @@ export default[
 
     },
     {
-        id: '4',
-        category: 'Otros',
+        id: 4,
+        categoria: 'otros',
         nombre: ' Eco Billetera',
         precio:  250,
         image: wallet04,
@@ -45,8 +45,8 @@ export default[
 
     },
     {
-        id: '5',
-        category: 'Otros',
+        id: 5,
+        categoria: 'rojo',
         nombre: 'Billetera Roja',
         precio:  260,
         image: wallet05,

@@ -6,28 +6,21 @@ import {NavLink} from "react-router-dom"
 
 
 const NavBar = () => {
-  const categories = [
-    { id: 'Todos', address: '/productos/', text: 'TODOS LOS PRODUCTOS' },
-    { id: 'Amarillo', address: '/category/amarillo', text: 'Amarillo' },
-    { id: 'Azul', address: '/category/azul', text: 'Azul' },
-    { id: 'Rojo', address: '/category/rojo', text: 'Rojo' },
-    { id: 'Otros', address: '/category/otros', text: 'Otros' },
-  ];
 
 return(
    <header>
       <nav>
         
-        <a href="#home" id="logo">Azure Cueros</a>      
+        <Link to="/" exact="true" id="logo">Azure Cueros</Link>      
         <ul id="nav-bar">
           <li>
-            <Link to="/">Home</Link>
+          <NavLink to="/" exact="true">Home</NavLink>
           </li>
           <li>
-            <Link to="/productos/">Productos</Link>
+          <NavLink to="/shop/">Productos</NavLink>
           </li>
           <li>
-            <Link to ="/detalle/">Detalles del Producto</Link>
+          <NavLink to="/contacto">Contacto</NavLink>
           </li>
           <li>
             <CartWidjet cantidad="0"/>
@@ -36,22 +29,7 @@ return(
       
       
       </nav>
-      <div>
-      <ul className="categories">
-              {categories.map((cat) => {
-                return (
-                  <div className="links" key={cat.id}>
-                    <NavLink
-                      to={cat.address}
-                      className={({ isActive }) => (isActive ? 'activeClass' : '')}
-                    >
-                      {cat.text}
-                    </NavLink>
-                  </div>
-                );
-              })}
-       </ul>
-      </div>
+      
    </header>
   )
 }
