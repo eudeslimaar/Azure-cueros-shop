@@ -1,0 +1,16 @@
+.cardDetail{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+    background: var(--color08);
+    padding: 40px;
+}
+.card__descript{
+}
+
+img.Detail_img {
+    width: 100%;
+    max-width: 230px;
+    border-radius: 4px;
+}

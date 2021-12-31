@@ -1,0 +1,22 @@
+button.cart{
+    background: none;
+    border: solid 2px rgb(18, 63, 33);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cart__fly{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16px;
+    position: absolute;
+    top: 4px;
+    background-color: rgb(18, 63, 33);
+    width: 21px;
+    height: 21px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+}

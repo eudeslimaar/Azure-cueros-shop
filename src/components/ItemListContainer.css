@@ -1,0 +1,6 @@
+.itemList__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 8% 0;
+}

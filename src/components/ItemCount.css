@@ -1,0 +1,47 @@
+.ItemCounter__col{
+    right: 30px;
+    bottom: 50px;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px
+}
+button.ItemCounter__agregar{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color05);
+}
+.agregar{
+    bottom: -20px;
+    left: 20px;
+    position: absolute;
+    background: var(--color02);
+    border-radius: 4px;
+    color:var(--color03);
+    font-weight: 600;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+
+}
+.agregar:hover{
+    color: var(--color03);
+    background: var(--color06);
+}
+.aumentar,
+.disminuir{
+    color: var(--color04);
+    background: var(--color02);
+    border-radius: 8px;
+    border: var(--color02);
+    padding: 2px 11px;
+    cursor: pointer;
+}
+.count{
+    color: var(--color02);
+    background: var(--color09);
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin: 2px
+}

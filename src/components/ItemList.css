@@ -1,0 +1,9 @@
+.itemlist__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--color07);
+    padding: 50px 40px;
+    border-radius: 10px;
+    gap: 30px;
+    
+}
