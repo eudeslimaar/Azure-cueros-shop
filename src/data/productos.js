@@ -9,7 +9,7 @@ const productos = [
         id: 1,
         nombre: 'Billetera Azul',
         categoria: 'azul',
-        precio:  230,
+        precio:  4550,
         image: wallet01,
         stock: '10',
         descp: 'Una billetera con muchas partes, para guardar todo que pueda, hecha com cuero de qualidade.',
@@ -19,40 +19,40 @@ const productos = [
         id: 2,
         nombre: 'Billetera Verde',
         categoria: 'otros',
-        precio:  260,
+        precio:  2360,
         image: wallet02,
         stock: '10',
         descp: 'Una billetera con muchas partes, para guardar todo que pueda, hecha com cuero de qualidade.',
-        envio: 50   
+        envio: 123   
 
     },
     {
         id: 3,
         categoria: 'amarillo',
         nombre: 'Billetera Amarilla',
-        precio:  220,
+        precio:  2550,
         image: wallet03,
         stock: '10',
         descp: 'Una billetera con muchas partes, para guardar todo que pueda, hecha com cuero de qualidade.',
-        envio: 850     
+        envio: 233     
 
     },
     {
         id: 4,
         categoria: 'otros',
         nombre: ' Eco Billetera',
-        precio:  250,
+        precio:  2250,
         image: wallet04,
         stock: '10',
         descp: 'Una billetera con muchas partes, para guardar todo que pueda, hecha com cuero de qualidade.',
-        envio: 850     
+        envio: 234     
 
     },
     {
         id: 5,
         categoria: 'rojo',
         nombre: 'Billetera Roja',
-        precio:  260,
+        precio:  2650,
         image: wallet05,
         stock: '10',
         descp: 'Una billetera con muchas partes, para guardar todo que pueda, hecha com cuero de qualidade.',

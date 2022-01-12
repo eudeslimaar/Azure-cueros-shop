@@ -1,6 +1,6 @@
-import amarillo from "../media/amarillo.png"
-import rojo from "../media/rojo.png"
-import azul from "../media/azul.png"
+import amarillo from "../media/yellow.jpg"
+import rojo from "../media/red.jpg"
+import azul from "../media/blue.jpg"
 import todos from "../media/todos.png"
 
  const categorias =  [

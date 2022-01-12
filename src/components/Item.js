@@ -16,7 +16,7 @@ const Item = ({ item }) => {
       <div className="description">
       <h3>{item.nombre}</h3>
         <span>
-          <p>ARS {item.precio}</p>
+          <p>{item.precio} ARS</p>
         </span>
         <span>
           Stock disponible: <b>{item.stock}</b>

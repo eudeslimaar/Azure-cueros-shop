@@ -60,8 +60,9 @@ const CartWidjet = () => {
             )}
           </ul>
               </div>
-              <div>
-              <span>Total: {cart.totalPrice}</span>
+              <div className="cart_PrecioFinal">
+              <span>Total: {cart.totalPrice} <strong>ARS</strong></span>
+              <p>Precio + Envio*</p>
               </div>
           <div className="cart__list-btn">
            
