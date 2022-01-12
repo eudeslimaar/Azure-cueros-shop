@@ -38,4 +38,15 @@
     background: var(--color02);
     color: var(--color08);
 }
+.hline{ 
+    width:90%; 
+    height:1px; 
+    background: #fff
+}
+.description{
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 

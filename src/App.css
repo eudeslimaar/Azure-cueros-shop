@@ -14,6 +14,7 @@
   --color07: #eaecbd;
   --color08: #273128;
   --color09: #1f2720;
+  --color10: #cecfab;
 }
 
 .row{
@@ -34,9 +35,7 @@ h2{
   margin: 1.2rem;
   text-align: center;
 }
-h3{
-  margin: 1rem;
-}
+
 p{
   color: var(--color04);
 }

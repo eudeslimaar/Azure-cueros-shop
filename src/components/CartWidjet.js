@@ -20,31 +20,36 @@ const CartWidjet = () => {
       </div>
 
       {showCartList && (
-            <div className= "cart__list" >
+        <div className= "cart__list" >
+              <div className="cart_inner">
               <p className="limpiar" onClick={clear}>
-            Limpiar
+            Limpiar Carrito
           </p>
-          <ul>
+          <ul className="inner__card">
             {cart.addedItems.length !== 0 ? (
               cart.addedItems.map((producto) => {
                 return (
-                  <li key={producto.id}>
+                  <li key={producto.id} className="cardInner_row">
                     <Link to={`/item/${producto.id}`}>
                       <img src={producto.image} alt={producto.title} />
                       <div>
                         <p>{producto.nombre}</p>
-                        <div precio={producto.precio}>
-                        </div>                    
+                        <div><p>{producto.precio} ARS</p>
+                      </div>                    
                         
                       </div>
                       
-                      <span>{producto.cantidad}</span>
+                      <span>Cant: {producto.cantidad}</span>
                     </Link>
-                    <span
+                    
+                    <div className="close__innerCard">
+                    <span 
                       onClick={() => removeItem(producto.id)}
                     >
-                      Cerrar
+                      X
                     </span>
+                    </div>
+                   
                   </li>
                 );
               })
@@ -52,10 +57,13 @@ const CartWidjet = () => {
               <p> Carrito Vacío </p>
             )}
           </ul>
-
+              </div>
+              <div>
+              <span>Total: {cart.totalPrice}</span>
+              </div>
           <div className="cart__list-btn">
-            <span>TOTAL: {cart.totalPrice}</span>
-            <Link to="/cart">Comprar</Link>
+           
+            <Link to="/cart">Finalizar</Link>
           </div>
         </div>
      

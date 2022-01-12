@@ -12,15 +12,18 @@ const Item = ({ item }) => {
       <div className="card__img">
         <img src={item.image} alt={item.title} />
       </div>
-      <h3>{item.nombre}</h3>
-      <span>
-        <p>ARS {item.precio}</p>
-      </span>
-      <span>
-        Stock disponible: <b>{item.stock}</b>
-      </span>
       
-      <span>Color: {item.categoria}</span>
+      <div className="description">
+      <h3>{item.nombre}</h3>
+        <span>
+          <p>ARS {item.precio}</p>
+        </span>
+        <span>
+          Stock disponible: <b>{item.stock}</b>
+        </span>
+        
+        <span>Color: {item.categoria}</span>
+      </div>
      
       <div>
           <button className="detalle">Detalles</button>
