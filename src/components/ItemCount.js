@@ -55,17 +55,7 @@ const ItemCount = ({
             </div>
         </div>
         <div ClassName="itemCounter__final">
-            <div>
-                <Link
-                    className="comprar"
-                    to="/cart"
-                    disabled={stockProducto === 0 && true}
-                >
-                <button className="itemCount_buttom">Comprar</button>
-                </Link>
-            </div>
-                    
-            <div>
+            
                 <button 
                     className="itemCount_buttom"
                     onClick={() => onAdd(contadorProducto)}
@@ -73,7 +63,6 @@ const ItemCount = ({
                 >
                     Agregar
                 </button>
-            </div>
         </div>
     </div>
     

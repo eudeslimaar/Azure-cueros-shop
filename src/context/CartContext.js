@@ -43,10 +43,10 @@ const CartContextProvider = ({ children }) => {
 
   const calculoTotalPrice = (item, cantidad) => {
 
-    if (item.descuento === "") return cart.totalPrice + item.price * cantidad;
+    if (item.envio === "") return cart.totalPrice + item.precio * cantidad;
 
-    let formatoDescuento = item.price - (item.descuento * item.price) / 100;
-    return cart.totalPrice + formatoDescuento * cantidad;
+    let costoEnvio = item.precio + item.envio 
+    return cart.totalPrice + costoEnvio * cantidad;
   };
 
   const isInCart = (id) => {
@@ -72,11 +72,11 @@ const CartContextProvider = ({ children }) => {
 
   const decrementTotalPrice = (item) => {
     let updateTotalPrice = 0;
-    if (item.descuento === "")
-      return (updateTotalPrice += item.price * item.cantidad);
+    if (item.envio === "")
+      return (updateTotalPrice += item.precio * item.cantidad);
 
-    let formatoDescuento = item.price - (item.descuento * item.price) / 100;
-    return (updateTotalPrice += formatoDescuento * item.cantidad);
+    let costoEnvio = item.precio + item.envio
+    return (updateTotalPrice += costoEnvio * item.cantidad);
   };
 
   const clear = () => {

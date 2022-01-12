@@ -17,6 +17,7 @@
     gap: 2;
 }
 .itemCount_buttom{
+    margin: 20px 0;
     width: 100%;
     height: 40px;
     color: var(--color08);
@@ -25,9 +26,7 @@
     border: none;
     cursor: pointer;
 }
-.itemCounter__final{
-   width: 100%;
-}
+
 
 .aumentar,
 .disminuir{

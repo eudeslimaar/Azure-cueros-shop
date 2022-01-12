@@ -34,8 +34,10 @@ const CartWidjet = () => {
                       <img src={producto.image} alt={producto.title} />
                       <div>
                         <p>{producto.nombre}</p>
-                        <div><p>{producto.precio} ARS</p>
-                      </div>                    
+                        <div>
+                          <p>{producto.precio} ARS</p>
+                          <p> Envio: {producto.envio} ARS</p>
+                        </div>                    
                         
                       </div>
                       
