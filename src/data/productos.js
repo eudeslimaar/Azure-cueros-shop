@@ -4,7 +4,7 @@ import wallet03 from "../media/image03.jpg";
 import wallet04 from "../media/image04.jpg";
 import wallet05 from "../media/image05.jpg";
 
-export default [
+const productos = [
     {
         id: 1,
         nombre: 'Billetera Azul',
@@ -29,7 +29,7 @@ export default [
     {
         id: 3,
         categoria: 'amarillo',
-        nombre: 'Billetera Amarillo',
+        nombre: 'Billetera Amarilla',
         precio:  220,
         image: wallet03,
         stock: '10',
@@ -60,3 +60,4 @@ export default [
 
     }
 ]
+export default productos
