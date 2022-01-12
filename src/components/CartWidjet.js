@@ -16,7 +16,7 @@ const CartWidjet = () => {
           onClick={() => setShowCartList(!showCartList)}>
 
             <i class="fas fa-shopping-cart"></i>
-            <div>{cart.addedItems.length}</div>
+            <div className="cart__fly">{cart.addedItems.length}</div>
       </div>
 
       {showCartList && (

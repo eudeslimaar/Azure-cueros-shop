@@ -9,13 +9,11 @@ const ItemCount = ({
     contadorProducto,
     setContadorProducto,
   }) => {
-const [count, setCount] = useState(1);
-    const contador = 10
     const handleChange = (e) => {
         let name = e.target.name;
         switch (name) {
         case "agregar":
-            if (contador === 0) {
+            if (stockProducto === 0) {
             return console.log("Stock indisponible");
             }
             if (contadorProducto < stockProducto) {
@@ -50,7 +48,7 @@ const [count, setCount] = useState(1);
             <button className="aumentar" name="agregar" onClick={(e) => handleChange(e)}>
                 +
             </button>
-            <div className="count">{count}</div>
+            <div className="count">{contadorProducto}</div>
             <button className="disminuir" name="sacar" onClick={(e) => handleChange(e)}>
                 -
             </button>

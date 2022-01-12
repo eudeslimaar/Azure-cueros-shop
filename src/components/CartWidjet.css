@@ -1,6 +1,6 @@
 .cart{
     background: none;
-    border: solid 2px rgb(18, 63, 33);
+    color:var(--color05);
     border-radius: 7px;
     cursor: pointer;
 }
