@@ -5,8 +5,17 @@
     margin: 20px;
     background: var(--color08);
     padding: 40px;
+    border-radius: 12px;
 }
 .card__descript{
+    background-color: var(--color02);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+    padding: 10px;
+    
+
 }
 
 img.Detail_img {

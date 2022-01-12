@@ -1,9 +1,11 @@
-import ItemCount from "./ItemCount"
+
 import "./Item.css"
 
 
 
 const Item = ({ item }) => {
+  
+  
   return (
     
     <div className="card">
@@ -12,10 +14,14 @@ const Item = ({ item }) => {
       </div>
       <h3>{item.nombre}</h3>
       <span>
+        <p>ARS {item.precio}</p>
+      </span>
+      <span>
         Stock disponible: <b>{item.stock}</b>
       </span>
+      
       <span>Color: {item.categoria}</span>
-      <ItemCount stockProducto={item.stock} />
+     
       <div>
           <button className="detalle">Detalles</button>
       </div>

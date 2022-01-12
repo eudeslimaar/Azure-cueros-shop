@@ -1,34 +1,34 @@
 .ItemCounter__col{
+    
+    padding: 10px;
+    align-items: center;
+    background: var(--color09);
     right: 30px;
     bottom: 50px;
-    position:absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2px
+    border-radius: 12px;
 }
-button.ItemCounter__agregar{
+.ItemCounter__col p{
+    color: var(--color02);
+}
+.itemCouter__buttons{
     display: flex;
-    justify-content: center;
-    background-color: var(--color05);
+    gap: 2;
 }
-.agregar{
-    bottom: -20px;
-    left: 20px;
-    position: absolute;
+.itemCount_buttom{
+    width: 100%;
+    height: 40px;
+    color: var(--color08);
     background: var(--color02);
-    border-radius: 4px;
-    color:var(--color03);
-    font-weight: 600;
-    padding: 20px 30px;
+    border-radius: 12px;
     border: none;
     cursor: pointer;
+}
+.itemCounter__final{
+   width: 100%;
+}
 
-}
-.agregar:hover{
-    color: var(--color03);
-    background: var(--color06);
-}
 .aumentar,
 .disminuir{
     color: var(--color04);

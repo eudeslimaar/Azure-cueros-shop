@@ -5,10 +5,11 @@ import { useCart } from "../context/CartContext";
 import { useState } from "react"
 
 const CartWidjet = () => {
+  
   const { cart, removeItem, clear} = useCart();
   const [showCartList, setShowCartList] = useState(false);
-
   return(
+
    <div className="ContainerCartWidjet">
 
       <div className="cart"
