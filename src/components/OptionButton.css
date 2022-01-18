@@ -1,0 +1,12 @@
+
+button,
+.OptionButton {
+    border: 1px solid;
+    border-radius: 6px;
+    color: coral;
+    width: 100%;
+    
+}
+.button_ajust{
+    padding: 2px 0;
+}

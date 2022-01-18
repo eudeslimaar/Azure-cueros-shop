@@ -14,9 +14,6 @@
     background: url(../media/home.jpeg);
     background-size:cover;
     border-radius: 12px;
-    transition: all 3s ease-in-out;
     
-}
-.home__card:hover{
-    transform: scale(1.05);
+    
 }

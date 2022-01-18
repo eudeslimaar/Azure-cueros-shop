@@ -60,6 +60,8 @@ const ItemCount = ({
                     className="itemCount_buttom"
                     onClick={() => onAdd(contadorProducto)}
                     disabled={stockProducto === 0 && true}
+                    isLink={true}
+                    to="/cart"
                 >
                     Agregar
                 </button>

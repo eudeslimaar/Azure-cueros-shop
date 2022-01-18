@@ -1,0 +1,28 @@
+.container__Cart{
+    width: 90%;
+    margin:  8% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color07);
+    padding: 20px;
+    border-radius: 8px;
+}
+.cart__items{
+    width: 60%;
+    align-items: center;
+    
+}
+.total{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.total h3{
+    color: var(--color06);
+}
+.OptionButton{
+    width: 8px;
+}

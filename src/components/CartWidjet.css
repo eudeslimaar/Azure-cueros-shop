@@ -6,6 +6,7 @@
     border-radius: 8px;
     cursor: pointer;
     align-items: center;
+    z-index: 400;
 }
 .cart:hover{
   background: coral;
