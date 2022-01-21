@@ -3,12 +3,12 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
-    apiId: process.env.REACT_APP_FIREBASE_APIID,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
+    apiKey: "AIzaSyCb7MTgl-bOCObqE2ykDPqe4qBO1TJALFI",
+    authDomain: "azure-cueros.firebaseapp.com",
+    projectId: "azure-cueros",
+    storageBucket: "azure-cueros.appspot.com",
+    messagingSenderId: "1:770724643971:web:7b04cee3019afb3a2987b6",
+    appId: "G-CLB04156QV"
 };
 
 
