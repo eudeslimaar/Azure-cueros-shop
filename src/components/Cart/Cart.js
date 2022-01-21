@@ -1,6 +1,6 @@
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 import CartWidgetItem from "./CartWidjetItem"
-import OptionButton from "./OptionButton"
+import OptionButton from "../OptionButton/OptionButton"
 import "./Cart.css"
 
 const Cart = () => {

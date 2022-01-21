@@ -1,11 +1,12 @@
 import './App.css'
-import NavBar from './components/NavBar'
-import Home from './components/Home'
-import ItemListContainer from "./components/ItemListContainer"
-import ItemDetailContainer from "./components/ItemDetailContainer"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { CartContextProvider } from "./context/CartContext"
-import Cart from "./components/Cart";
+//components
+import NavBar from './components/NavBar/NavBar'
+import Home from './components/Home/Home'
+import Cart from "./components/Cart/Cart";
+import ItemListContainer from "./components/Item/ItemListContainer"
+import ItemDetailContainer from "./components/Item/ItemDetailContainer"
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
         <BrowserRouter>
         <NavBar/>
           <Routes>
-              <Route path="/" exact="true" element={<Home />}/>
+              <Route path="/"  element={<Home />}/>
               <Route path="/shop/" exact="true" element={<ItemListContainer />} />
               <Route path="/shop/category/:categoryId" element={<ItemListContainer/>}/>
               

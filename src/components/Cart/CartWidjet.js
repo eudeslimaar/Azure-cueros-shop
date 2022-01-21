@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./CartWidjet.css";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 import { useState } from "react"
 
 const CartWidjet = () => {

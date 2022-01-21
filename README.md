@@ -18,6 +18,6 @@ Esta es una aplicación web hecha con Reactjs. Dispone de unas funciones básica
   - [x] useEffect y useState.
   - [x] Routing y navegación.
   - [x] CartContext.
-  - [ ] Firebase.
+  - [x] Firebase.
 
   

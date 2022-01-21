@@ -1,38 +1,13 @@
-import React, { useState, useEffect } from "react";
 import Item from "./Item"
 import "./ItemList.css"
-import productos from "../data/productos.js"
 import { Link } from "react-router-dom";
+import useGetItems from "../../firebase/hooks/useGetItems";
 
 
 const ItemList = ({ soloCategoria }) => {
-  const [items, setItems] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  
+  const [items] = useGetItems();
 
-  const loadItems = async () => {     
-    const response = await new Promise((resolve, reject) => {
-      setTimeout(() =>{
-        resolve(productos);
-      }, 2000);
-    });
-
-    return response;
-  };
-
-  useEffect(() => {
-    const getItems = async () => {
-      setIsLoading(true);
-      const result = await loadItems();
-      setIsLoading(false);
-      setItems(result);
-    };
-    getItems();
-  }, []);
-
-
-
-  
+ 
   return (
     <div className="itemlist__container">
       {soloCategoria
@@ -52,9 +27,6 @@ const ItemList = ({ soloCategoria }) => {
               </Link>
             );
           })}
-      {isLoading && (
-        <h2>CARGANDO...</h2>
-      )}
     </div>
   );
 };

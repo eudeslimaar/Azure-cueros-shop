@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ItemDetail.css"
 import ItemCount from "./ItemCount";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 
 
 const ItemDetail = ({ item }) => {

@@ -1,7 +1,8 @@
-import CartWidjet from '../components/CartWidjet'
-import './NavBar.css'
+import CartWidjet from '../../components/Cart/CartWidjet'
+import '../NavBar/NavBar.css'
 import {Link} from "react-router-dom"
 import {NavLink} from "react-router-dom"
+
 
 
 

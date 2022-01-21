@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react"
-import { Link } from "react-router-dom";
-import "./ItemCount.css"
+import { useEffect } from "react";
+import OptionButton from "../OptionButton/OptionButton"
+import "./ItemCount.css";
 
 
 const ItemCount = ({
@@ -8,6 +8,7 @@ const ItemCount = ({
     onAdd,
     contadorProducto,
     setContadorProducto,
+    limit,
   }) => {
     const handleChange = (e) => {
         let name = e.target.name;
@@ -36,7 +37,7 @@ const ItemCount = ({
         if (stockProducto === 0) {
           setContadorProducto(0);
         }
-      }, [stockProducto]);
+      }, [stockProducto, setContadorProducto]);
 
   return (
     <div className="ItemCounter__container">
@@ -66,6 +67,34 @@ const ItemCount = ({
                     Agregar
                 </button>
         </div>
+        <div className="item-count__button">
+          {stockProducto === 0 || limit ? (
+            <>
+              <OptionButton
+                text="TERMINAR MI COMPRA"
+                onClick={() => onAdd(contadorProducto)}
+                disabled={stockProducto === 0 && true}
+                isLink={true}
+                to="/cart"
+                className="action fullwidth"
+              />
+              <OptionButton
+                text="CONTINUAR COMPRANDO"
+                onClick={() => onAdd(contadorProducto)}
+                disabled={stockProducto === 0 && true}
+                isLink={true}
+                to="/shop"
+                className="fullwidth"
+              />
+            </>
+          ) : (
+            <OptionButton
+              text="AGREGAR AL CARRITO"
+              onClick={() => onAdd(contadorProducto)}
+              disabled={stockProducto === 0 || limit ? true : false}
+            />
+          )}
+          </div>
     </div>
     
     

@@ -1,7 +1,5 @@
 import "./Item.css"
 
-
-
 const Item = ({ item }) => {
   
   
