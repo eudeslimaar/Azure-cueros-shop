@@ -50,7 +50,14 @@ const ItemCount = ({
                 +
             </button>
             <div className="count">{contadorProducto}</div>
-            <button className="disminuir" name="sacar" onClick={(e) => handleChange(e)}>
+            <button 
+            
+            className="disminuir" 
+            name="sacar" 
+            onClick={(e) => handleChange(e)}
+            disabled={contadorProducto > 1 ? false : true}
+            >
+              
                 -
             </button>
             </div>
