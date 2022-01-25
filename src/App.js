@@ -7,7 +7,7 @@ import Home from './components/Home/Home'
 import Cart from "./components/Cart/Cart";
 import ItemListContainer from "./components/Item/ItemListContainer"
 import ItemDetailContainer from "./components/Item/ItemDetailContainer"
-import productos from "./data/productos"
+/*import productos from "./data/productos"
 import { collection, addDoc } from 'firebase/firestore'
 import {fileUpload} from "./firebase/fileUpload"
 import {db} from "firebase"
@@ -18,7 +18,7 @@ const arrayUpload = () =>{
 
     addDoc(collection(db,'products'), {...element, image: imgURL})
   })
-}
+} */
 
 
 const App = () => {
@@ -26,9 +26,7 @@ const App = () => {
     
     <div className="App">
       <CartContextProvider>
-        <button onClick={arrayUpload}>
-          Subir contenido
-        </button>
+        
         <BrowserRouter>
         <NavBar/>
           <Routes>

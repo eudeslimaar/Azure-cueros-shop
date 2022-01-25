@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import  db  from "../firebase";
+import db  from "../firebase";
 
 const useGetItems = () => {
   const [items, setItems] = useState([]);
@@ -8,7 +8,7 @@ const useGetItems = () => {
 
   useEffect(() => {
     const unsuscribe = db
-      .collection("productos-tienda")
+      .collection("products")
       .limit(15)
       .onSnapshot((snapshot) => {
         if (snapshot.docs.length > 0) {
@@ -18,11 +18,7 @@ const useGetItems = () => {
           setItemsPorCargar(false);
         }
 
-        setItems(
-          snapshot.docs.map((gasto) => {
-            return { ...gasto.data(), id: gasto.id };
-          })
-        );
+        setItems();
       });
 
     return unsuscribe;

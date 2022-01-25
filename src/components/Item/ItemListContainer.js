@@ -7,6 +7,9 @@ import NavBarCategoria from "../NavBar/NavBarCategoria";
 
 const ItemListContainer = () => {
   const { categoryId } = useParams()
+
+
+  
     return (
       <div className="itemList__container">
       <NavBarCategoria />

@@ -13,10 +13,10 @@ const CartWidgetItem = ({ producto, removeItem }) => {
         <img src={producto.image} alt={producto.nombre} />
         <div className="description__final">
           <p>{producto.nombre}</p>
-            
+
             <div className="cantidad"><p>{producto.precio} ARS</p><p>x {producto.cantidad}</p> </div>
         </div>
-        
+
       </Link>
       <span
         className="close"
@@ -27,4 +27,4 @@ const CartWidgetItem = ({ producto, removeItem }) => {
     </div>
   );
 };
-export default CartWidgetItem
+export default CartWidgetItem 

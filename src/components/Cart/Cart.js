@@ -29,7 +29,7 @@ const Cart = () => {
             <OptionButton
               text="Finalizar pedido"
               isLink={true}
-              
+
             />
             <OptionButton
               text="Continuar"
@@ -49,4 +49,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default Cart; 

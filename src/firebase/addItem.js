@@ -4,17 +4,21 @@ import { db } from "./firebase";
 const addItem = async ({
   id,
   categoria,
+  descp,
+  envio,
+  image,
   nombre,
   precio,
-  image,
   stock,
 }) => {
-  db.collection("productos-tienda").doc(id).set({
+  db.collection("products").doc(id).set({
     id: id,
     categoria: categoria,
+    desp: descp,
+    envio: envio,
+    image: image,
     nombre: nombre,
     precio: precio,
-    image: image,
     stock: stock,
   });
 };
