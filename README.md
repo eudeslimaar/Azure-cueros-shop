@@ -20,4 +20,6 @@ Esta es una aplicación web hecha con Reactjs. Dispone de unas funciones básica
   - [x] CartContext.
   - [x] Firebase.
 
+  firebase versao nova-
+
   
