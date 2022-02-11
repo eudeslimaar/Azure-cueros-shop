@@ -4,7 +4,7 @@
 
 - **GitHub:**   [eudeslimaar](https://github.com/eudeslimaar)
 - **Linkedin:** [in/eudeslimaar/](https://www.linkedin.com/in/eudeslimaar/)
-- **Email**     - Develeper@eudeslima.com
+- **Email**     - Developer@eudeslima.com
 
 Esta es una aplicación web hecha con Reactjs. Dispone de unas funciones básicas necesarias para el funcionamiento de un E-commerce.
 
